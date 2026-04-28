@@ -1,4 +1,4 @@
-import { createBrowserRouter, Navigate } from 'react-router-dom'
+import { createHashRouter, Navigate } from 'react-router-dom'
 import AuthLayout from '@/layouts/AuthLayout'
 import MainLayout from '@/layouts/MainLayout'
 import ProtectedRoute from '@/routes/ProtectedRoute'
@@ -25,7 +25,7 @@ import RolePage from '@/pages/system/RolePage'
 import MenuPage from '@/pages/system/MenuPage'
 import DictionaryPage from '@/pages/system/DictionaryPage'
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: '/',
     element: <Navigate to="/dashboard" replace />,
